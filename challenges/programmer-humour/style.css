@@ -1,0 +1,13 @@
+body {
+  background-color :blueviolet;
+  text-align: center;
+  margin-top: 15px;
+}
+h2{
+    font-size: 40px;
+    border-style:groove;
+    color: black;
+    width: fit-content;
+    margin-left: 489px;
+    background-color: antiquewhite;
+}
