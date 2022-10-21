@@ -2,10 +2,9 @@ const parentContainer = document.getElementById("photoContainer");
 const dogPhotoAdder = document.getElementById("btnAdd");
 function dogPhotos() {
   fetch(`https://dog.ceo/api/breeds/image/random`)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
+    .then( (response) => response.json()
+)
+    .then((data) =>{
       let dogImageList = document.createElement("li");
 
       let dogImage = document.createElement("img");

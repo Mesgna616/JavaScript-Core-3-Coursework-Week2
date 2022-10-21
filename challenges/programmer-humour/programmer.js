@@ -1,16 +1,13 @@
+const url = `https://xkcd.now.sh/?comic=latest`;
 let photo = document.getElementById("humourPhoto");
 function programmerHumour() {
-  fetch("https://xkcd.now.sh/?comic=latest")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      photo.src = data.img;
+  fetch(url)
+    .then((response) => response.json())
+   .then((data) => {
       console.log(data);
-    })
-    .catch(function (err) {
-      console.log(err);
-    });
+      photo.src = data.img;
+  })
+    .catch( (err) =>  console.log(err));
 }
 
 programmerHumour();
